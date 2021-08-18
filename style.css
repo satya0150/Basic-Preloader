@@ -72,3 +72,58 @@ body{
         opacity: 0;
     }
 }
+
+/* css of progressbar preloder */
+.conta{
+ height: 200px;
+ width: 500px;
+ margin: 70px auto;
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.percent{
+    color: #999 ;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.text{
+    position: absolute;
+    color: #fdb5ca;
+    font-size: 10px;
+    left: 170px;
+    letter-spacing: 1px;
+    line-height: 10px;
+    display: none;
+}
+.blink{
+    animation: blink .7s ease-in-out .1s;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.progress-bar{
+    width: 400px;
+    height: 11px;
+    background: #111;
+    border-radius: 7px;
+    
+}
+.progress{
+    width: 100px;
+    height: 11px;
+    background: #f60d54;
+    border-radius: 7px;
+}
